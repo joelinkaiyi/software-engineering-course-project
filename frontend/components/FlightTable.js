@@ -26,15 +26,19 @@ export default function FlightTable({ flights }) {
                 <Link href={`/flights/${f.id}`}>{f.flightNo}</Link>
               </td>
               <td className="p-3">{f.airlineName}</td>
-              <td className="p-3">{f.origin}</td>
+              <td className="p-3">{f.upAirportCode + f.origin}</td>
               <td className="p-3">{f.expectedArrival}</td>
               <td className="p-3">{f.actualArrival || "-"}</td>
               <td
                 className={`p-3 font-bold ${
-                  f.status === "延誤Delay"
+                  f.status === "延誤Delayed"
                     ? "text-red-600"
                     : f.status === "準時OnTime"
                     ? "text-green-600"
+                    : f.status === "提早Early"
+                    ? "text-yellow-600"
+                    : f.status === "已到Arrived"
+                    ? "text-blue-600"
                     : "white"
                 }`}
               >

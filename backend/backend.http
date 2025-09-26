@@ -1,6 +1,3 @@
-@backend_HostAddress = http://localhost:5197
+GET http://localhost:5197/api/flights
 
-GET {{backend_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
+Content-Type: "application/json"

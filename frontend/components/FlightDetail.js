@@ -6,7 +6,7 @@ export default function FlightDetail({ flight }) {
       </h3>
       <p className="text-gray-800">
         <span className="font-semibold text-gray-800">出發地：</span>
-        {flight.origin}
+        {flight.upAirportCode + flight.origin}
       </p>
       <p className="text-gray-800">
         <span className="font-semibold text-gray-800">預計抵達：</span>
@@ -29,7 +29,9 @@ export default function FlightDetail({ flight }) {
         </span>
       </p>
       {flight.delayReason && (
-        <p className="text-red-500 mt-2 font-bold">⚠️ 延誤原因：{flight.delayReason}</p>
+        <p className="text-red-500 mt-2 font-bold">
+          ⚠️ 延誤原因：{flight.delayReason}
+        </p>
       )}
     </div>
   );

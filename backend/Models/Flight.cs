@@ -5,6 +5,7 @@ namespace backend.Models
         public int Id { get; set; }
         public string FlightNo { get; set; } = string.Empty;
         public string AirlineName { get; set; } = string.Empty;
+        public string UpAirportCode { get; set; } = string.Empty;
         public string Origin { get; set; } = string.Empty;
         public string Destination { get; set; } = string.Empty;
 

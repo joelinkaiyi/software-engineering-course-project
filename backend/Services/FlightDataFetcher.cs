@@ -7,7 +7,7 @@ public class FlightDataFetcher
 {
     private readonly HttpClient _http;
     private readonly AppDbContext _db;
-    private const string ApiURL = "https://www.tsa.gov.tw/api/publicDataArea/GetFormaterData?id=3057d52f-7a71-49e1-a0d4-87ffa3449a6a";
+    private const string ApiURL = "https://www.tsa.gov.tw/api/publicDataArea/GetFormaterData?id=7dc1379a-9485-4491-866d-fc4f9590ffcf";
 
     public FlightDataFetcher(HttpClient http, AppDbContext db)
     {
@@ -26,6 +26,7 @@ public class FlightDataFetcher
             FlightNo = $"{r.AirLineIATA}{r.AirLineNum}",
             AirlineName = r.AirLineName,
             Origin = r.UpAirportName,
+            UpAirportCode=r.UpAirportCode,
             Destination = r.GoalAirportName,
             ExpectedDeparture = ParseTime(r.AirFlyDate, r.ExpectDepartureTime),
             ActualDeparture = ParseTime(r.AirFlyDate, r.RealDepartureTime),

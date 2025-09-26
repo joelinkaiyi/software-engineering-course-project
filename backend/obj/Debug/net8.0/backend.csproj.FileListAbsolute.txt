@@ -133,3 +133,4 @@
 /Users/joeylin/Documents/software-engineering-course-project/backend/obj/Debug/net8.0/backend.pdb
 /Users/joeylin/Documents/software-engineering-course-project/backend/obj/Debug/net8.0/backend.genruntimeconfig.cache
 /Users/joeylin/Documents/software-engineering-course-project/backend/obj/Debug/net8.0/ref/backend.dll
+/Users/joeylin/Documents/software-engineering-course-project/backend/obj/Debug/net8.0/backend.sourcelink.json
