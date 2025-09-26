@@ -18,7 +18,6 @@ export default function FlightDetailPage() {
         setLoading(true);
         setError(null);
 
-        // 這裡改成你後端的 API，例如 /api/flights/:id
         const res = await fetch(`http://localhost:5197/api/flights/${id}`);
 
         if (!res.ok) {

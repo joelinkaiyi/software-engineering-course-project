@@ -53,7 +53,7 @@ export default function HomePage() {
         </div>
         <div className="bg-blue-100 p-4 rounded-lg shadow-md text-center">
           <p className="text-blue-700">已抵達</p>
-          <p className="text-2xl font-bold text-blue-700">{mockStats.early}</p>
+          <p className="text-2xl font-bold text-blue-700">{mockStats.arrived}</p>
         </div>
         <div className="bg-yellow-100 p-4 rounded-lg shadow-md text-center">
           <p className="text-yellow-700">提早</p>

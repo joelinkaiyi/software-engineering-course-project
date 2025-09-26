@@ -50,7 +50,10 @@ export default function AboutPage() {
       <section>
         <h2 className="text-lg font-semibold mb-2 text-gray-700">作者資訊</h2>
         <p className="text-gray-700">
-          本系統由學生開發，作為資料庫、前端、後端整合的練習專案。
+          班級：四子三丙<br />
+          學號：C112156221<br />
+          姓名：林凱翊<br />
+          修讀課程：軟體工程
         </p>
       </section>
     </div>

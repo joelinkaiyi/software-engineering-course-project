@@ -119,7 +119,6 @@
 /Users/joeylin/Documents/software-engineering-course-project/backend/obj/Debug/net8.0/backend.csproj.CoreCompileInputs.cache
 /Users/joeylin/Documents/software-engineering-course-project/backend/obj/Debug/net8.0/backend.MvcApplicationPartsAssemblyInfo.cs
 /Users/joeylin/Documents/software-engineering-course-project/backend/obj/Debug/net8.0/backend.MvcApplicationPartsAssemblyInfo.cache
-/Users/joeylin/Documents/software-engineering-course-project/backend/obj/Debug/net8.0/backend.sourcelink.json
 /Users/joeylin/Documents/software-engineering-course-project/backend/obj/Debug/net8.0/staticwebassets.build.json
 /Users/joeylin/Documents/software-engineering-course-project/backend/obj/Debug/net8.0/staticwebassets.development.json
 /Users/joeylin/Documents/software-engineering-course-project/backend/obj/Debug/net8.0/staticwebassets/msbuild.backend.Microsoft.AspNetCore.StaticWebAssets.props

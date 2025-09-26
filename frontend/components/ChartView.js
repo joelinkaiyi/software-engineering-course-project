@@ -1,6 +1,4 @@
-"use client";
-
-import { Pie, Line } from "react-chartjs-2";
+import { Pie, Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
   Title,
@@ -9,8 +7,7 @@ import {
   ArcElement,
   CategoryScale,
   LinearScale,
-  PointElement,
-  LineElement,
+  BarElement,
 } from "chart.js";
 
 ChartJS.register(
@@ -20,57 +17,45 @@ ChartJS.register(
   ArcElement,
   CategoryScale,
   LinearScale,
-  PointElement,
-  LineElement
+  BarElement
 );
 
 export function OnTimeRateChart({ data }) {
-  // data: { arrived, early, onTime, delayed }
   const chartData = {
-    labels: ["已抵達", "提早", "準時", "改時"],
+    labels: ["已抵達", "提早", "準時", "改時", "取消"],
     datasets: [
       {
         label: "航班比例",
-        data: [data.arrived, data.early, data.onTime, data.change],
-        backgroundColor: ["#4DA5F3", "#ffd700", "#16a34a", "#dc2626"],
+        data: [
+          data.arrived,
+          data.early,
+          data.onTime,
+          data.change,
+          data.cancelled,
+        ],
+        backgroundColor: [
+          "#4DA5F3",
+          "#ffd700",
+          "#16a34a",
+          "#dc2626",
+          "#6b7280",
+        ],
       },
     ],
   };
-
-  return <Pie data={chartData} />;
-}
-
-export function ArrivedRateChart({ data }) {
-  // data: { arrived, total }
-  const chartData = {
-    labels: ["已抵達", "未抵達"],
-    datasets: [
-      {
-        label: "抵達比例",
-        data: [data.arrived, data.total - data.arrived],
-        backgroundColor: ["#4DA5F3", "#e5e7eb"],
-      },
-    ],
-  };
-
   return <Pie data={chartData} />;
 }
 
 export function DelayTrendChart({ data }) {
-  // data: [{ date: "2025-09-13", count: 5 }, ...]
   const chartData = {
     labels: data.map((d) => d.date),
     datasets: [
       {
         label: "改時航班數",
         data: data.map((d) => d.count),
-        borderColor: "#2563eb",
-        backgroundColor: "#93c5fd",
-        fill: true,
-        tension: 0.3,
+        backgroundColor: "#2563eb",
       },
     ],
   };
-
-  return <Line data={chartData} />;
+  return <Bar data={chartData} />;
 }
