@@ -28,8 +28,6 @@ export default function AboutPage() {
         <ul className="list-disc pl-6 text-gray-700 space-y-1">
           <li>即時航班資訊：查詢最新到站航班。</li>
           <li>統計分析：準點率、延誤趨勢圖表。</li>
-          <li>通知設定：支援瀏覽器通知與 Email 提醒。</li>
-          <li>自訂設定：調整刷新頻率、追蹤狀態。</li>
         </ul>
       </section>
 

@@ -27,7 +27,7 @@ export default function FlightsPage() {
     }
     const q = query.toLowerCase();
     const results = flights.filter((f) =>
-      [f.flightNo, f.airlineName, f.originAirport]
+      [f.flightNo, f.airlineName, f.upAirportCode + f.origin,f.upAirportCode,f.origin]
         .filter(Boolean)
         .some((field) => field.toLowerCase().includes(q))
     );

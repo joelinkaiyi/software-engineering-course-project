@@ -10,7 +10,6 @@ export default function Navbar() {
     { href: "/", label: "首頁" },
     { href: "/flights", label: "航班清單" },
     { href: "/stats", label: "統計" },
-    { href: "/settings", label: "設定" },
   ];
 
   return (

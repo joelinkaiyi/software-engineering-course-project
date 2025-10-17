@@ -120,7 +120,7 @@ export default function HomePage() {
       </div>
 
       {/* 快速導覽 */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         <Link
           href="/flights"
           className="bg-blue-600 text-white p-4 rounded-lg shadow-md text-center hover:bg-blue-700"
@@ -132,12 +132,6 @@ export default function HomePage() {
           className="bg-blue-600 text-white p-4 rounded-lg shadow-md text-center hover:bg-blue-700"
         >
           統計分析
-        </Link>
-        <Link
-          href="/settings"
-          className="bg-blue-600 text-white p-4 rounded-lg shadow-md text-center hover:bg-blue-700"
-        >
-          系統設定
         </Link>
         <Link
           href="/about"
