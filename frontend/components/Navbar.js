@@ -17,7 +17,9 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-14">
           {/* Logo */}
-          <div className="text-lg font-bold">松山航班資訊</div>
+          <div className="text-lg font-bold">
+            <Link href="/">松山航班資訊</Link>
+          </div>
 
           {/* 導覽連結 */}
           <div className="flex space-x-6">
